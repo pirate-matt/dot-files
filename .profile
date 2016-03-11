@@ -28,6 +28,9 @@ alias cll='clear; echo "ls"; ll'
 alias cla='clear; echo "ls"; la'
 alias clall='clear; echo "ls"; lall'
 
+# Git
+alias gs='git status'
+
 
 
 
