@@ -1,2 +1,48 @@
-# dev-setup
-Why not store all your .vimrc, .profile, etc. preferences in git hub.  Maybe one day a passing stranger will give you some great advice on one that completely revolutionizes your productivity!
+# dot-files
+Shell configuration files mostly; "run commands" files: `.vimrc`, `.zshrc`, etc.
+
+# Useful Commands Shortlist
+_(Non-exhausive list. Focused on useful but infrequently used and hence forgotten.)_
+
+* `| pbcopy` - pipes right into your mac's copy buffer. Very shiny.
+* `pwd` - results in the full path of your current directory, useful when referencing repo-backed config files like these
+* `r.s` - custom _re.source_ alias, useful when changing these rc files
+
+# First-time Mac Setup
+Currently running two manual steps to setup when on a fresh mac install.
+
+**:warning: NOTE:** your paths may vary, currently I have this repo living at: `~/Documents/public-repos/dot-files`.
+
+**One, setup zshell**
+
+Create a `.zshrc` file in your home directory. Copy-pasta-ing this:
+
+```sh
+# ---------------------------------------------------------------
+# Load External Script Files
+# ----------------------------------------------------------------
+
+RC_FILE_PATH="Documents/public-repos/dot-files"
+EXTERNAL_RC_FILES=(
+ '.macrc.sh'
+ '.gitrc.sh'
+ '.dockerrc.sh'
+)
+
+for RC_FILE in "${EXTERNAL_RC_FILES[@]}"
+do
+if [ -f ~/$RC_FILE_PATH/$RC_FILE ]; then
+    source ~/$RC_FILE_PATH/$RC_FILE
+else
+    print "404: ~/$RC_FILE_PATH/$RC_FILE not found."
+fi
+done
+```
+
+**Two, setup vim**
+
+Create a .vimrc file in your home directory. Copy-pasta-ing this:
+
+```sh
+source ~/Documents/public-repos/dot-files/.vimrc.sh
+```
