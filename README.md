@@ -11,7 +11,7 @@ _(Non-exhausive list. Focused on useful but infrequently used and hence forgotte
 # First-time Mac Setup
 Currently running two manual steps to setup when on a fresh mac install.
 
-**:warning: NOTE:** your paths may vary, currently I have this repo living at: `~/Documents/public-repos/dot-files`.
+**:warning: NOTE:** your paths may vary, typically I have this repo living at: `~/Documents/public-repos/dot-files`.
 
 **One, setup zshell**
 
