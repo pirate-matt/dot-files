@@ -1,0 +1,9 @@
+# :warning: be VERY careful not to put sensitive information here, maintain that manually
+# I try to keep up with comments and links to how to add the sensitive things I expect
+
+[user]
+	name = piratematt
+	email = pirate-matt@users.noreply.github.com
+	# signingkey = See --> https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+[commit]
+	gpgsign = true

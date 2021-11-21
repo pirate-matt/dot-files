@@ -11,7 +11,7 @@ _(Non-exhausive list. Focused on useful but infrequently used and hence forgotte
 # First-time Mac Setup
 Currently running two manual steps to setup when on a fresh mac install.
 
-**:warning: NOTE:** your paths may vary, typically I have this repo living at: `~/Documents/public-repos/dot-files`.
+_:warning: NOTE: your paths may vary, typically I have this repo living at: `~/Documents/public-repos/dot-files`._
 
 **One, setup zshell**
 
@@ -45,4 +45,15 @@ Create a .vimrc file in your home directory. Copy-pasta-ing this:
 
 ```sh
 source ~/Documents/public-repos/dot-files/.vimrc.sh
+```
+
+**Three, setup gitconfig**
+
+Create a .gitconfig file in your home directory. Copy-pasta-ing this:
+
+_:warning: be VERY careful not to put sensitive information here, maintain that manually!_
+
+```sh
+[include]
+    path = ~/Documents/public-repos/dot-files/.gitconfig
 ```
