@@ -28,11 +28,13 @@ alias cll='clear; echo "ls"; ll'
 alias cla='clear; echo "ls"; la'
 alias clall='clear; echo "ls"; lall'
 
-#Rename tab/window
+# Rename tab/window
 function tabname { printf "\e]1;$1\a"; }
 function winname { printf "\e]2;$1\a"; }
 alias tn='tabname'
 
+# Fix GPG Signing
+alias fix.gpg='echo "echo \"test\" | gpg --clearsign"; echo "test" | gpg --clearsign; echo "export GPG_TTY=$(tty)"; export GPG_TTY=$(tty); echo "echo \"test\" | gpg --clearsign"; echo "test" | gpg --clearsign;' 
 # -----------------------------------------
 # From Troy (BidPal)
 # ----------------------------------------------------------------
