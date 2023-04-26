@@ -1,14 +1,19 @@
 # dot-files
-Shell configuration files mostly; "run commands" files: `.vimrc`, `.zshrc`, etc.
+Useful when setting up a new machine or when you run into those common, but infrequent developer problems and ask yourself... _How did I solve this last time? Why didn't I write it down?_
 
-# Useful Commands Shortlist
+Contains my standard developer configuration files: shell, git, vim, docket, etc.
+
+I also keep a few a few "how I handle these scenario notes" in [STRATEGIES.md](./STRATEGIES.md).
+
+## Useful Commands Shortlist
 _(Non-exhausive list. Focused on useful but infrequently used and hence forgotten.)_
 
 * `| pbcopy` - pipes right into your mac's copy buffer. Very shiny.
 * `pwd` - results in the full path of your current directory, useful when referencing repo-backed config files like these
 * `r.s` - custom _re.source_ alias, useful when changing these rc files
+* `fix.gpg` – custom alias that does some path magic to fix gpg signing for github commits (see `.git*` file comments for more info).
 
-# First-time Mac Setup
+## First-time Mac Setup
 Currently running two manual steps to setup when on a fresh mac install.
 
 _:warning: NOTE: your paths may vary, typically I have this repo living at: `~/Documents/public-repos/dot-files`._
