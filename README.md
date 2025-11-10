@@ -54,7 +54,7 @@ source ~/Documents/public-repos/dot-files/.vimrc.sh
 
 **Three, setup gitconfig**
 
-Create a .gitconfig file in your home directory. Copy-pasta-ing this:
+Create a `.gitconfig` file in your home directory. Copy-pasta-ing this:
 
 _:warning: be VERY careful not to put sensitive information here, maintain that manually!_
 
